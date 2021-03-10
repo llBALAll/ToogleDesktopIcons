@@ -2,7 +2,6 @@
 #include <iostream>
 
 void toogleicons() {
-	//HWND H = FindWindowEx(0, 0, L"Progman", NULL);
 	HWND H = FindWindowEx(0, 0, (LPCSTR) "Progman", NULL);
 	if (IsWindow(H)) {
 		if (IsWindowVisible(H)) ShowWindow(H, SW_HIDE);
@@ -11,7 +10,6 @@ void toogleicons() {
 }
 
 int main () {
-
 	toogleicons();
 	return 0;
 }
