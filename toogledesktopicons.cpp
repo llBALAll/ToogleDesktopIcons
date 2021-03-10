@@ -1,7 +1,7 @@
 #include <Windows.h>
 #include <iostream>
 
-void ChangeVisibility() {
+void toogleicons() {
 	//HWND H = FindWindowEx(0, 0, L"Progman", NULL);
 	HWND H = FindWindowEx(0, 0, (LPCSTR) "Progman", NULL);
 	if (IsWindow(H)) {
@@ -12,6 +12,6 @@ void ChangeVisibility() {
 
 int main () {
 
-	ChangeVisibility();
+	toogleicons();
 	return 0;
 }
