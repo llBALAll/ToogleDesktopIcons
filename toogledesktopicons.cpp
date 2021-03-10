@@ -10,6 +10,7 @@ void toogleicons() {
 }
 
 int main () {
+
 	toogleicons();
 	return 0;
 }
